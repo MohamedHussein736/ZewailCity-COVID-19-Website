@@ -48,11 +48,14 @@ const TOPK_PREDICTIONS = 2;
 let mobilenet;
 const mobilenetDemo = async () => {
   status('Loading model...');
+  document.getElementById('result').style.display = 'none';
+  document.getElementById('reset').style.display = 'none';
 
   mobilenet = await tf.loadLayersModel(COVIDNET_MODEL_PATH);
 
   $(".progress-bar").hide();
-
+  document.getElementById('result').style.display = '';
+  document.getElementById('reset').style.display = '';
   // Warmup the model. This isn't necessary, but makes the first prediction
   // faster. Call `dispose` to release the WebGL memory allocated for the return
   // value of `predict`.
@@ -128,9 +131,7 @@ export async function getTopKClasses(logits, topK) {
   for (let i = 0; i < values.length; i++) {
     valuesAndIndices.push({value: values[i], index: i});
   }
-  valuesAndIndices.sort((a, b) => {
-    return b.value - a.value;
-  });
+ 
   const topkValues = new Float32Array(topK);
   const topkIndices = new Int32Array(topK);
   for (let i = 0; i < topK; i++) {
