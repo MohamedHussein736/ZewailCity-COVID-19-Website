@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+<title>ZewailCity COVID-19 AI Initiative</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- ################## STYLE #####################-->
+
+<style>
+  .w3-btn {
+    width: 150px;
+  }
+</style>
+
+<html lang="en">
+<style>
+  table,
+  th,
+  td {
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+  }
+</style>
+
+<style>
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked+.slider {
+    background-color: #ec2d48;
+  }
+
+  input:focus+.slider {
+    box-shadow: 0 0 1px #ec2d48;
+  }
+
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>
+</head>
+
+<!-- ################## STYLE #####################-->
+
+<!-- ################## BODY #####################-->
+
+<body>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Zewail City Initiative Against Corona Virus Pandemic</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+      rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <title>Zewail City Initiative Against Corona Virus Pandemic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
+  </head>
+
+  <body>
+
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header">
+      <div class="container">
+
+        <div id="logo" class="pull-left">
+          <!-- Uncomment below if you prefer to use a text logo -->
+          <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+          <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+          <!-- <a href="#intro" class="scrollto"><img src='img/egy-logo.png' style='position:absolute; top:0; left:0;' height='64' alt=''></a> -->
+          <!-- <a href="#intro" class="scrollto"><img src='img/egy-logo.png' alt=''title="" ></a> -->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">COVID-19-Test</a></li>
+            <li><a href="#schedule">Result</a></li>
+            <li><a href="#gallery">X-Ray Gallery</a></li>
+            <li><a href="#Members">Members</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+
+      </div>
+
+      <a href="#intro" class="scrollto"><img src='img/egy-logo.png' style='position:absolute; top:0; left:0;' height='120' alt='Egypt'></a>
+    
+    </header><!-- #header -->
+
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro">
+      <div class="intro-container wow fadeIn">
+        <h1 class="mb-4 pb-0">AI for <br><span>COVID-19</span> Detection</h1>
+        <p class="mb-4 pb-0">Zewail City for Science and Technology Initiative Against Corona Virus Pandemic</p>
+
+        <a href="#speakers" class="about-btn scrollto">COVID19 AI TEST</a>
+
+        <!--  
+      <input id="toggle-trigger" type="checkbox" data-toggle="toggle">
+ 
+    <button class="btn btn-success" onclick="toggleOn()">On by API</button>
+    <button class="btn btn-danger" onclick="toggleOff()">Off by API</button>
+    <button class="btn btn-success" onclick="toggleOnByInput()">On by Input</button>
+    <button class="btn btn-danger" onclick="toggleOffByInput()">Off by Input</button>
+    <script>
+      function toggleOn() {
+        $('#toggle-trigger').bootstrapToggle('on')
+      }
+      function toggleOff() {
+        $('#toggle-trigger').bootstrapToggle('off')  
+      }
+      function toggleOnByInput() {
+        $('#toggle-trigger').prop('checked', true).change()
+      }
+      function toggleOffByInput() {
+        $('#toggle-trigger').prop('checked', false).change()
+      }
+    </script>
+-->
+
+      </div>
+
+
+    </section>
+
+    <main id="main">
+
+      <!--==========================
+      About Section
+    ============================-->
+      <section id="about">
+        <div class="container">
+          <div class="col-lg-12">
+            <h2>About US</h2>
+            <p>
+              This preliminary assessment uses the pre-trained ZC-COVID19 deep learning model developed at Zewail City
+              IRES Lab.
+              You can upload images of X-Ray scans and state the symptoms then the test will give preliminary
+              assessment, it has been trained to recognize COVID-19 from X-Ray scans also the results depends on
+              the common symptoms stated in <a href="https://www.who.int/health-topics/coronavirus#tab=tab_3">World
+                  Health Organization</a>.
+              To be NOTED that we do not claim diagnostic performance of our test without a clinical study.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        body {
+          font-family: Arial;
+          color: white;
+        }
+
+        .split {
+          height: 100%;
+          width: 50%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          overflow-x: hidden;
+          padding-top: 20px;
+        }
+
+        .left {
+          left: 0;
+          background-color: #111;
+        }
+
+        .right {
+          right: 0;
+          background-color: red;
+        }
+
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        .centered img {
+          width: 150px;
+          border-radius: 50%;
+        }
+      </style>
+
+
+
+      <!--==========================
+      Speakers Section
+    ============================-->
+      <section id="speakers" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>COVID-19 Preliminary Assessment</h2>
+            <p>Upload X-Ray image and select the symptoms, to use AI for detecting Corona virus, </p>
+
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+                <div class="progress progress-bar progress-bar-striped progress-bar-animated mb-2">Loading The Deep Learning Model</div>
+            </div>
+          </div>
+
+          <div class="row" style="background-color:white;">
+
+            <div class="col" style="background-color:transparent;">
+
+              <table align="centered">
+                <tr>
+                  <th> <br />
+                    <div class="speaker">
+                      <img src="img/speakers/covid.jpeg" id="xRay" width="600" height="600 ">
+                      <div class="details">
+                        <h3><a href="#X-Ray Gallery">Upload a similar X-Ray image</a></h3>
+                        <p>front Chest X-Ray</p>
+                  </th>
+                </tr>
+                <tr>
+                  <br />
+                </tr>
+              </table>
+            </div>
+
+
+
+            <div class="col" style="background-color:transparent;">
+              <table align="center">
+                <tr>
+                  <th>
+                    <label for="b2"></label>
+                    <label class="switch">
+                      <input type="checkbox" id="b1">
+                      <span class="slider round"></span>
+                    </label>
+                  </th>
+                </tr>
+                <br>
+                <tr>
+                  <th>Fever</th>
+                </tr>
+                <tr>
+                  <th>
+                    <label for="b2"></label>
+                    <label class="switch">
+                      <input type="checkbox" id="b2">
+                      <span class="slider round"></span>
+                    </label>
+                  </th>
+                </tr>
+                <br>
+                <tr>
+                  <th>Tiredness</th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <label for="b2"></label>
+                    <label class="switch">
+                      <input type="checkbox" id="b3">
+                      <span class="slider round"></span>
+                    </label>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>Dry cough</th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <label for="b2"></label>
+                    <label class="switch">
+                      <input type="checkbox" id="b4">
+                      <span class="slider round"></span>
+                    </label>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>Aches and Pains</th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <label for="b2"></label>
+                    <label class="switch">
+                      <input type="checkbox" id="b5">
+                      <span class="slider round"></span>
+                    </label>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>Nasal Congestion</th>
+                </tr>
+
+                <tr>
+                  <th>
+                    <label for="b2"></label>
+                    <label class="switch">
+                      <input type="checkbox" id="b6">
+                      <span class="slider round"></span>
+                    </label>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>Runny Nose</th>
+                </tr>
+
+
+                <tr>
+                  <th>
+                    <label for="b2"></label>
+                    <label class="switch">
+                      <input type="checkbox" id="b7">
+                      <span class="slider round"></span>
+                    </label>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th>Sore Throat</th>
+
+                </tr>
+
+                <tr>
+                  <th>
+                    <br />
+                    <div id="file-container" style="display: none">
+                      Upload an image: <input type="file" id="files" name="files[]" onchange="loadFile(event)" />
+                    </div>
+                    <br>
+
+                  </th>
+                </tr>
+              </table>
+
+            </div>
+
+          </div>
+          <table align="Center">
+            <tr>
+              <th>
+                <button class="w3-button w3-white w3-border w3-border-red w3-round-large" onclick="totalresult()">
+                  <a href="#schedule">RESULT</a>
+                </button>
+                <button class="w3-button w3-black w3-round-large" onclick="reset()">reset</button>
+                <br>
+                <br>
+
+              </th>
+
+            </tr>
+          </table>
+
+
+
+          <script>
+            const uploadedImage = document.getElementById('file-container').style.display = '';
+            console.log(uploadedImage);
+          </script>
+
+
+      </section>
+
+      <!--==========================
+      Schedule Section
+    ============================-->
+      <section id="schedule" class="section-with-bg">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <br>
+            <br>
+            <h2>RESULTS</h2>
+          </div>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Results</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Advices</a>
+            </li>
+          </ul>
+              <!-- <p><a href="https://www.health.harvard.edu/diseases-and-conditions/coronavirus-resource-center">Corona virus Resource Harvard Center </a></p> -->
+
+
+          <div class="tab-content row justify-content-center">
+
+            <!-- Schdule Day 1 -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+              <div class="row schedule-item">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <h4>HINT</h4>
+                  <p>If the percentage more than 60% we Suggest you to follow the Advices.</p>
+                </div>
+              </div>
+
+              <div class="row schedule-item">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="img/covid.png" id="small" alt="Brenden Legros">
+                  </div>
+
+                  <h4>COVID-19 Prediction X-ray Image Prediction only
+                    <h2 id="demo1"> 0 %</h2>
+                  </h4>
+
+                  <h4> Total Prediction with Symptoms
+                    <h2 id="demo2"> 0 %</h2>
+                  </h4>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!--
+              <div class="row schedule-item">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="img/covid.png" alt="Brenden Legros">
+                  </div>
+                  <h4>COVID-19 Prediction X-ray Image(only)
+                    <h2 id="demo1"> 0 %</h2>
+                  </h4>
+
+                  <h4> Total Prediction
+                    <h2 id="demo2"> 0 %</h2>
+                  </h4>
+
+                </div>
+              </div>
+
+
+              <div class="row schedule-item">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <div class="speaker">
+                    <img src="img/covid.png" alt="Hubert Hirthe">
+                  </div>
+                  <h1 id="demo3"> 0 %</h1>
+                  <h4>covid 19 Infection percentage </h4>
+                  <h1 id="demo4"> 0 %</h1>
+                  <h4>Normal percentage </h4>
+                </div>
+              </div>
+              -->
+
+
+          </div>
+
+        </div>
+        <!-- End Schdule Day 1 -->
+
+        <!-- ############################################################# -->
+
+
+        <section class='section-head'>
+
+          <section class='section-head'>
+            <div id="status" style="display: none"></div>
+          </section>
+
+          <hr>
+          <section class='section-head'>
+            <div id="file-container" style="display: none">
+              Upload an image: <input type="file" id="files" name="files[]" multiple />
+            </div>
+          </section>
+
+          <div class="items">
+            <figure>
+              <img class="img-thumbnail" style="display: none" id="cat" src="./img/covid19-12.png" width=224 height=224
+                alt="Your X-Ray image" />
+            </figure>
+          </div>
+
+
+          <section>
+
+            <div style="display: none" id="predictions"></div>
+
+          </section>
+
+          <hr>
+
+          </div>
+          </div>
+
+          <!-- ############################################################# -->
+
+          <!-- 
+           Schdule Day 3 -->
+
+           <div class="tab-content row justify-content-center">
+
+            <!-- Schdule Day 1 -->
+            <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+              <div class="row schedule-item">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                  <h4>ADVICES</h4>
+                  <p>Call the coronavirus-hotline in your country.</p>
+                  <p>Check out this Q&A <a href="https://www.health.harvard.edu/diseases-and-conditions/coronavirus-resource-center" target="_blank">Corona virus Harvard Center </a></p>
+                </div>
+
+              </div>
+
+            </div>
+
+           </div>
+
+<!-- 
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div> -->
+
+          </div>
+
+          </div>
+
+          </div>
+
+        </section>
+
+        <!--==========================
+      Gallery Section
+    ============================-->
+        <section id="gallery" class="wow fadeInUp">
+
+          <div class="container">
+            <div class="section-header">
+              <h2>X-Ray Gallery</h2>
+              <p>For Uploading a similar image scans,Check our X-Ray Gallery of real cases from our data set.</p>
+              <p>You download one of them and use it for testing.</p>
+            </div>
+          </div>
+
+          <div class="owl-carousel gallery-carousel">
+            <a href="img/gallery/1.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.png"
+                alt=""></a>
+            <a href="img/gallery/2.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.png"
+                alt=""></a>
+            <a href="img/gallery/3.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.png"
+                alt=""></a>
+            <a href="img/gallery/4.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.png"
+                alt=""></a>
+            <a href="img/gallery/5.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.png"
+                alt=""></a>
+            <a href="img/gallery/6.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.png"
+                alt=""></a>
+            <a href="img/gallery/7.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.png"
+                alt=""></a>
+            <a href="img/gallery/8.png" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.png"
+                alt=""></a>
+          </div>
+        </section>
+
+
+        <!--==========================
+      Speakers Section
+    ============================-->
+        <section id="Members" class="wow fadeInUp">
+
+          <section id="speakers" class="wow fadeInUp">
+
+            <div class="container">
+              <div class="section-header">
+                <h2>Project Members</h2>
+                <p> </p>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="speaker">
+                    <img src="img/speakers/1.png" alt="Speaker 1" class="img-fluid" width="350" height="350">
+                    <div class="details">
+                      <h3><a href="https://www.linkedin.com/in/abdalrahman-m-amer/">Abdelrahman Ibrahim</a></h3>
+                      <p></p>
+                      <div class="social">
+                        <a href="https://www.facebook.com/lordabdo"><i class="fa fa-facebook"></i></a>
+                        <a href="abdalrahman.m5959@gmail.com"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://www.linkedin.com/in/abdalrahman-m-amer/"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="speaker">
+                    <img src="img/speakers/3.png" alt="Speaker 2" class="img-fluid" width="350" height="350">
+                    <div class="details">
+                      <h3><a
+                          href="https://www.zewailcity.edu.eg/main/content.php?lang=en&alias=moustafa_elshafei,_ph.d">Prof.
+                          Moustafa Elshafei</a></h3>
+                      <p></p>
+                      <div class="social">
+                        <a href="moelshafei@zewailcity.edu.eg"><i class="fa fa-google-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="speaker">
+                    <img src="img/speakers/0.png" alt="Speaker 3" class="img-fluid" width="350" height="350">
+                    <div class="details">
+                      <h3><a href="https://www.linkedin.com/in/mohamedhussein736/">Mohamed Hussein</a></h3>
+                      <p></p>
+                      <div class="social">
+                        <a href="https://www.facebook.com/mohamed.hussien.391082/"><i class="fa fa-facebook"></i></a>
+                        <a href="mohamedhussein736@gmail.com"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamedhussein736/"><i class="fa fa-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+
+        </section>
+
+
+
+        <!--==========================
+      Contact Section
+    ============================-->
+        <section id="contact">
+          <div class="container">
+
+            <div class="section-header">
+              <h2>Contact Us</h2>
+            </div>
+
+            <div class="row contact-info">
+
+              <div class="col-md-4">
+                <div class="contact-address">
+                  <i class="ion-ios-location-outline"></i>
+                  <h3>Address</h3>
+                  <address>
+                    IRES Lab, Nano building at Zewail City for Science and Technology,
+                    <br>
+                    6 October, Egypt
+                  </address>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="Website">
+                  <i class="ion-ios-telephone-outline"></i>
+                  <h3><br>University Official Website</h3>
+                  <p><a href="https://zewailcity.edu.eg/main/index.php?lang=en">
+                      zewailcity.edu.eg
+                    </a></p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="contact-email">
+                  <i class="ion-ios-email-outline"></i>
+                  <h3>Email</h3>
+                  <p><a href="mailto:aeibrahim@Zewailcity.edu.eg">aeibrahim@Zewailcity.edu.eg</a></p>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </section><!-- #contact -->
+
+    </main>
+
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-info">
+              <img src="img/logo.png" alt="TheEvenet">
+              <p>
+                We are NOT responsable of the diagnostic performance of our test without a clinical study of the case.
+                <br>
+                Contact us for more details.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                Zewail City of Science and Technology <br>
+                6 October City, Egypt<br>
+                <strong>Email:</strong> aeibrahim@Zewailcity.edu.eg<br>
+              </p>
+
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Zewail City IRES Lab</strong>. All Rights Reserved 2020
+        </div>
+        <div class="credits">
+          <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        </div>
+      </div>
+    </footer><!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/venobox/venobox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Tensorflow inferance tfjs File -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script type="module" src="./js/tf.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+    <!-- <script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-storage.js"></script> -->
+
+    <script>
+      var loadFile = function (event) {
+        var image = document.getElementById('xRay');
+        var small_image = document.getElementById('small');
+
+        image.src = URL.createObjectURL(event.target.files[0]);
+        small_image.src = URL.createObjectURL(event.target.files[0]);
+
+        totalresult();
+      };
+    </script>
+    <script>
+      var b1 = document.getElementById("b1").checked;
+      var b2 = document.getElementById("b2").checked;
+      var b3 = document.getElementById("b3").checked;
+      var b4 = document.getElementById("b4").checked;
+      var b5 = document.getElementById("b5").checked;
+      var b6 = document.getElementById("b6").checked;
+      var b7 = document.getElementById("b7").checked;
+
+      var b1_x1 = 8;
+      var b2_x2 = 7;
+      var b3_x3 = 6;
+      var b4_x4 = 5;
+      var b5_x5 = 4;
+      var b6_x6 = 2;
+      var b7_x7 = 1;
+      var total_b = 36;
+      var result = 0;
+      var result_total = 0;
+
+      function totalresult() {
+        b1 = document.getElementById("b1").checked;
+        b2 = document.getElementById("b2").checked;
+        b3 = document.getElementById("b3").checked;
+        b4 = document.getElementById("b4").checked;
+        b5 = document.getElementById("b5").checked;
+        b6 = document.getElementById("b6").checked;
+        b7 = document.getElementById("b7").checked;
+
+
+        var covid = parseFloat(document.getElementById("demo1").innerHTML);
+        //var x2 = parseFloat(document.getElementById("demo2").innerHTML);
+
+        result = (b1 * b1_x1 + b2 * b2_x2 + b3 * b3_x3 + b4 * b4_x4 + b5 * b5_x5 + b6 * b6_x6 + b7 * b7_x7) / total_b;
+        result_total = (covid + result) / 2;
+        result_total = result_total * 100;
+        result_total = result_total.toFixed(1);
+        result_total = result_total.toString(8) + " " + "%";
+
+        // covid = covid * 100;
+        // covid = covid.toFixed(1);
+        //covid = covid.toString(8) + " " + "%";
+
+
+        document.getElementById("demo1").innerHTML = covid;
+        document.getElementById("demo2").innerHTML = result_total;
+
+      }
+
+      function reset() {
+        b1 = document.getElementById("b1").checked = false;
+        b2 = document.getElementById("b2").checked = false;
+        b3 = document.getElementById("b3").checked = false;
+        b4 = document.getElementById("b4").checked = false;
+        b5 = document.getElementById("b5").checked = false;
+        b6 = document.getElementById("b6").checked = false;
+        b7 = document.getElementById("b7").checked = false;
+      }
+
+
+      document.getElementById("demo2").addEventListener("load", myFunction3);
+
+      function myFunction3() {
+        reset();
+        totalresult();
+      }
+
+
+    </script>
+
+  </body>
+  <!-- ################## BODY #####################-->
+
+</html>
