@@ -35,7 +35,6 @@ const COVIDNET_CLASSES = {
 };
 
 const COVIDNET_MODEL_PATH = 'https://storage.googleapis.com/zewailcity-covid19.appspot.com/binary-covid19-model/model.json';
-    //'https://storage.googleapis.com/covid19model-77538.appspot.com/model_v1/model.json';
     // tslint:disable-next-line:max-line-length
     // 'https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json';
     //'http://localhost:8081/tfjs-models/covid19-zc/model.json';
@@ -51,8 +50,13 @@ const mobilenetDemo = async () => {
   document.getElementById('result').style.display = 'none';
   document.getElementById('reset').style.display = 'none';
 
-  mobilenet = await tf.loadLayersModel(COVIDNET_MODEL_PATH);
+  try {
+    mobilenet = await tf.loadLayersModel(COVIDNET_MODEL_PATH);
 
+   }
+  catch(err) {
+    mobilenet = await tf.loadLayersModel('https://storage.googleapis.com/covid19model-77538.appspot.com/model_v1/model.json');
+   }
   $(".progress-bar").hide();
   document.getElementById('result').style.display = '';
   document.getElementById('reset').style.display = '';
